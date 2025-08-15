@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Обнули дефолтні маржини від браузера для: — заголовків та параграфів тексту */
 h1,
 h2,
@@ -31,7 +37,7 @@ img {
 
 /* container styles */
 .container {
-        max-width: 1128px;
+        max-width: 1158px;
         padding-left: auto; /* unkown */
         padding-right: auto; /* unkown */
         margin-left: auto; /* unkown */
