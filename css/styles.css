@@ -52,6 +52,11 @@ img {
     gap: 24px; /* random value */
     align-items: center; /* вирівнювання по вертикалі */
     justify-content: space-between; /* або center / flex-start */
+    
+}
+.flex-container li {
+    flex: 1 1 calc(25% - 24px); /* 4 items per row minus the gap */
+    list-style: none;
 }
 /* flex container styles end */
 
