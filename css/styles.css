@@ -1,3 +1,4 @@
+/* typography styles */
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -6,6 +7,37 @@ body {
     color: #434455;
     background-color: #ffffff;
 }
+/* Обнули дефолтні маржини від браузера для: — заголовків та параграфів тексту */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+/* для списків потрібно обнулити дефолтні маржини та лівий падінг */
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Зроби зображення блочними елементами */
+img {
+    display: block;
+}
+
+/* container styles */
+.container {
+        max-width: 1128px;
+        padding-left: auto; /* unkown */
+        padding-right: auto; /* unkown */
+        margin-left: auto; /* unkown */
+        margin-right: auto; /* unkown */
+}
+
 
 .logo {
     font-family: 'Raleway', sans-serif;
