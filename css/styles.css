@@ -42,9 +42,18 @@ img {
         padding-right: auto; /* unkown */
         margin-left: auto; /* unkown */
         margin-right: auto; /* unkown */
-
 }
 /* container styles end */
+
+/* flex-container styles */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap; /* дозволяє елементам переноситися на новий рядок */
+    gap: 24px; /* random value */
+    align-items: center; /* вирівнювання по вертикалі */
+    justify-content: space-between; /* або center / flex-start */
+}
+/* flex container styles end */
 
 /* header styles */
 .menu-link {
