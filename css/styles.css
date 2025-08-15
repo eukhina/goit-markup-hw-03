@@ -95,7 +95,7 @@ padding-bottom: 120px;}
     text-decoration: none;
 }
 
-.logo-primary {
+.logo-part {
     color: #2e2f42;
 }
 
@@ -237,7 +237,7 @@ body {
     background-color: #2E2F42;
 }
 
-.logo-primary-footer {
+.logo-part-footer {
     color: #f4f4fd;
 }
 /* footer styles end */
