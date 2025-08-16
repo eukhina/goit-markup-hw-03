@@ -196,7 +196,6 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
-    margin-bottom: 8px;
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -204,15 +203,17 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+.subtitle {margin-bottom: 8px;
+}
+
 .studio-cards {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     justify-content: center;
 }
-.studio-cards li {
+.studio-item {
     flex-basis: calc((100% - 72px) / 4);
-.subtitle {margin-bottom: 8px;}
 }
 
 /* Team section */
