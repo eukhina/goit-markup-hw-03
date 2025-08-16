@@ -53,6 +53,7 @@ img {
     justify-content: space-between;
     align-items: center;
     width: 1158px
+    padding: 0 15px
 }
 
 .menu {
