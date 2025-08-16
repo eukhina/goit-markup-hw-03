@@ -56,6 +56,7 @@ img {
     padding: 0 15px
 }
 
+
 .menu {
     display: flex;
     gap: 40px;
@@ -96,7 +97,7 @@ img {
     font-style: normal;
 }
 
-.contact-info ul {
+.contact-list {
     display: flex;
     gap: 40px;
 }
