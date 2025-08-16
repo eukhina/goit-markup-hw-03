@@ -196,12 +196,22 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
+    margin-bottom: 8px;
     border: 0;
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+.studio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+.studio-cards li {
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 /* Team section */
@@ -211,6 +221,21 @@ body {
 
 .team-member {
     background-color: #ffffff;
+}
+
+.team-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+
+}
+
+.team-cards li {
+    flex-basis: calc((100% - 72px) / 4);
+}
+.subtitle, 
+.text {
+    text-align: center;
 }
 
 /* Portfolio */
