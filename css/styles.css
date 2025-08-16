@@ -290,33 +290,27 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer */
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+
+.logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    text-decoration: none;
 }
 
 .footer-text {
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 .logo-part-footer {
     color: #f4f4fd;
+}
+.footer-links,
+.social-links {
+    display: none;
 }
