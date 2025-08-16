@@ -1,9 +1,9 @@
+/* Reset */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 
 h2,
 h3,
@@ -19,43 +19,46 @@ ol {
     margin: 0;
     padding-left: 0;
     list-style-type: none;
-    display: flex;
 }
 
 img {
     display: block;
 }
 
+/* Layout */
 .container {
-        max-width: 1158px;
-        padding: 0 15px; 
-        margin: 0 auto; }
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 
-.flex-container.menu {
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.flex-container {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 40px; 
-    align-items: center; 
-    justify-content: space-between; 
-    
-}
-.flex-container li {
-    flex: 1 1 calc(25% - 24px); /* 4 items per row minus the gap */
-    list-style: none;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
-.section {padding-top: 120px;
-padding-bottom: 120px;}
-
-
-/* header styles */
+/* Header */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    display: flex;
 }
+
 .header-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
 .menu-link {
     font-weight: 500;
     font-size: 16px;
@@ -72,13 +75,11 @@ padding-bottom: 120px;}
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
-    font-style: normal;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    vertical-align: middle;
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
@@ -89,9 +90,17 @@ padding-bottom: 120px;}
     color: #2e2f42;
 }
 
+.contact-info {
+    font-style: normal;
+}
+
+.contact-info ul {
+    display: flex;
+    gap: 40px;
+}
+
 .contact-link {
     font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -103,38 +112,15 @@ padding-bottom: 120px;}
 .contact-link:focus {
     color: #404BBF;
 }
-.contact-info ul {
-    display: flex;
-    gap: 40px;
-}
-address.contact-info {
-    font-style: normal;
-}
-/* header styles end */
 
-/* typography styles */
+/* Typography */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
     background-color: #ffffff;
-}
-
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;  
-    color: #4d5ae5;
-}
-
-.logo-primary {
-    color: #2e2f42;
 }
 
 .hero-title {
@@ -151,7 +137,7 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .subtitle {
@@ -161,37 +147,29 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
 }
-/* typography styles end */
 
-
-
-/* hero section styles */
-
-.hero-title {
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: #ffffff;
+/* Hero */
+.hero {
     text-align: center;
+    background-color: #2e2f42;
 }
+
 .hero-button {
-        color: #ffffff;
-        background-color: #4d5ae5;
-        cursor: pointer;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        }
+    color: #ffffff;
+    background-color: #4d5ae5;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
 .hero-button:hover,
 .hero-button:focus {
-        background-color: #404BBF;
-    }
-.hero {text-align: center;
-        background-color: #2e2f42;}
-    /* hero section styles end */
+    background-color: #404BBF;
+}
 
-/* 2 section styles */
+/* Studio section */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -205,32 +183,29 @@ body {
     overflow: hidden;
 }
 
-.studio {text-align: left;
-}
-/* 2 section styles end */
-
-/* 3 section styles */
+/* Team section */
 .team {
-    background-color: #F4F4FD; 
+    background-color: #f4f4fd;
 }
-.team-member {background-color: #ffffff;}
-/* 3 section styles end */
 
-/* 4 section styles */
-.portfolio {text-align: left;  
+.team-member {
+    background-color: #ffffff;
 }
-/* 4 section styles end */
 
-/* footer styles */
-.footer-text { inherits: body;}
-.footer-text {
-    color: #F4F4FD;
+/* Portfolio */
+.portfolio {
+    text-align: left;
 }
+
+/* Footer */
 .footer {
-    background-color: #2E2F42;
+    background-color: #2e2f42;
+}
+
+.footer-text {
+    color: #f4f4fd;
 }
 
 .logo-part-footer {
     color: #f4f4fd;
 }
-/* footer styles end */
