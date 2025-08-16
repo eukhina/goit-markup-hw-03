@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Обнули дефолтні маржини від браузера для: — заголовків та параграфів тексту */
-h1,
+
 h2,
 h3,
 h4,
@@ -15,60 +14,46 @@ p {
     margin: 0;
 }
 
-/* для списків потрібно обнулити дефолтні маржини та лівий падінг */
 ul,
 ol {
     margin: 0;
     padding-left: 0;
-}
-/* list styles */
-ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
-/* list styles end */
 
-
-/* Зроби зображення блочними елементами */
 img {
     display: block;
 }
 
-/* container styles */
 .container {
         max-width: 1158px;
         padding: 0 15px; 
         margin: 0 auto; }
-/* container styles end */
 
-/* flex-container styles */
 .flex-container.menu {
     display: flex;
-    flex-wrap: wrap; /* дозволяє елементам переноситися на новий рядок */
+    flex-wrap: wrap; 
     gap: 40px; 
-    align-items: center; /* вирівнювання по вертикалі */
-    justify-content: space-between; /* або center / flex-start */
+    align-items: center; 
+    justify-content: space-between; 
     
 }
 .flex-container li {
     flex: 1 1 calc(25% - 24px); /* 4 items per row minus the gap */
     list-style: none;
 }
-/* flex container styles end */
 
-/* section styles */
 .section {padding-top: 120px;
 padding-bottom: 120px;}
-/* section styles end */
-
 
 
 /* header styles */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
 }
-
+.header-container {
+    display: flex;
+}
 .menu-link {
     font-weight: 500;
     font-size: 16px;
