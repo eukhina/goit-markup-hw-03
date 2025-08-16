@@ -264,6 +264,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio .subtitle {
@@ -295,7 +296,7 @@ body {
     padding: 100px 0;
 }
 
-.logo {
+.footer-logo {
     display: inline-block;
     margin-bottom: 16px;
     text-decoration: none;
