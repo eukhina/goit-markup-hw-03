@@ -38,18 +38,15 @@ img {
 /* container styles */
 .container {
         max-width: 1158px;
-        padding-left: auto; /* unkown */
-        padding-right: auto; /* unkown */
-        margin-left: auto; /* unkown */
-        margin-right: auto; /* unkown */
-}
+        padding: 0 15px; 
+        margin: 0 auto; }
 /* container styles end */
 
 /* flex-container styles */
-.flex-container {
+.flex-container.menu {
     display: flex;
     flex-wrap: wrap; /* дозволяє елементам переноситися на новий рядок */
-    gap: 24px; /* random value */
+    gap: 40px; 
     align-items: center; /* вирівнювання по вертикалі */
     justify-content: space-between; /* або center / flex-start */
     
@@ -68,6 +65,10 @@ padding-bottom: 120px;}
 
 
 /* header styles */
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
 .menu-link {
     font-weight: 500;
     font-size: 16px;
@@ -75,6 +76,7 @@ padding-bottom: 120px;}
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-decoration: none;
+    padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -93,6 +95,7 @@ padding-bottom: 120px;}
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .logo-part {
@@ -113,7 +116,10 @@ padding-bottom: 120px;}
 .contact-link:focus {
     color: #404BBF;
 }
-
+.contact-info ul {
+    display: flex;
+    gap: 40px;
+}
 address.contact-info {
     font-style: normal;
 }
