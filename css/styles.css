@@ -287,6 +287,10 @@ body {
     border-top: none;
 }
 
+.portfolio-item-info .subtitle,
+.portfolio-item-info .text {
+    margin: 0;
+}
 
 
 
