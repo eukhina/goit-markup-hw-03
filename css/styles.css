@@ -242,13 +242,13 @@ body {
     margin-bottom: 72px;
 }
 
-.subtitle {
+.team-member .subtitle {
     text-align: center;
     margin-bottom: 8px;
    
 }
 
-.text {
+.team-member .text {
     text-align: center;
    
 }
@@ -257,12 +257,12 @@ body {
 .portfolio {
     text-align: left;
 }
-.subtitle {
+.portfolio .subtitle {
     text-align: left;
     margin-bottom: 8px;
     margin-top: 32px;
 }
-.text {
+.portfolio .text {
     text-align: left;
     margin-bottom: 32px;
 }
